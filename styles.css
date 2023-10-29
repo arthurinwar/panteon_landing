@@ -1078,3 +1078,256 @@ flex-shrink: 0;
     left: 0;
     top: 20px;
 }
+
+.textFormSection {
+    background-image: url('./images/pexels-ivan-samkov-4164520.png');
+    background-size: cover;
+    background-position: center;
+    min-width: 1440px;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.allTheTextForm {
+    padding: 100px 170px 170px 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.textformBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.anyQuestions {
+    width: 275px;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 125% */    
+}
+
+.stayNumber {
+    width: 351px;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */    
+}
+
+.necessaryNetwork {
+    color: #F7931E;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;    
+}
+
+.getName {
+    
+    color: rgba(255, 255, 255, 0.50);
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 133.333% */
+    background: transparent;
+    border: none;
+    padding-bottom: 15px;    
+}
+
+.getNameBlock {
+    display: flex;
+    justify-content: flex-start;
+    width: 351px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+}
+
+.getNumber {
+    
+    color: rgba(255, 255, 255, 0.50);
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 133.333% */
+    background: transparent;
+    border: none;
+    padding-bottom: 15px;   
+}
+
+.getNumberBlock {
+    display: flex;
+    justify-content: flex-start;
+    width: 351px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+    margin-top: 25px;
+}
+
+.textFormGetConsultation {
+    width: 280px;
+    height: 60px;
+    flex-shrink: 0;
+    margin-top: 30px;
+}
+
+.policeConf {
+    width: 280px;
+    color: rgba(255, 255, 255, 0.50);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    margin-top: 20px;
+}
+
+.map {
+    background-image: url('./images/image\ 6.svg');
+    background-size: cover;
+    background-position: center;
+    min-width: 1440px;
+    min-height: 567px;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 176px;
+}
+
+.contactsBlock {
+    position: absolute; 
+    width: 396px;
+    height: 449px;
+    flex-shrink: 0;
+    background: #0C1417;
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
+        
+
+}
+
+.contactsTitle {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px; /* 113.333% */
+    
+}
+
+.contactsLocation {
+    display: flex;
+    
+}
+
+.locationText {
+    width: 285px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    margin-left: 16px;    
+}
+
+.clocksText {
+    width: 285px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    margin-left: 16px;    
+}
+
+.contactsTime {
+    display: flex;
+}
+
+.numbersText {
+    width: 157px;
+    height: 49px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */    
+    margin-left: 16px;    
+}
+
+.phoneNumbers {
+    display: flex; 
+}
+
+.subscribeToUs {
+    width: 302px;
+    height: 23px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */        
+}
+
+.socNetworks {
+    display: flex;
+    align-items: center;
+
+}
+
+.vkImage {
+    margin-left: 15px;
+}
+
+.footer {
+    background-image: url('./images/Rectangle\ 80.svg');
+    background-size: cover;
+    background-position: center;
+    min-width: 1440px;
+
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.footerThings {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rightsAllowed {
+    width: 195px;
+    height: 24px;
+    flex-shrink: 0;
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    display: flex;
+    justify-content: space-between;        
+}
