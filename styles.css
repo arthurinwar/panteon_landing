@@ -1,14 +1,20 @@
 
-.desktop-container {
+/*.desktop-container {
     background: url('./images/pexels-cottonbro-7674492.png') center/cover no-repeat;
     position: relative;
-    min-width: 1440px;
+    min-width: 100%;
     min-height: 950px;
     display: flex;
     flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh;
+    overflow-x: hidden;
     
     
 }
+
+
 
 .background-layer {
     background: url('./images/Rectangle\ 6.png') center/cover no-repeat;
@@ -21,37 +27,65 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 100%;
 }
 
 .header {
     text-align: center;
-    
 }
 
+.headerLogo {
+    width: 230px;
+    height: 106px;
+    position: absolute;
+    top: 0;
+    left: 62px;
+}
 
 .image-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-right: 62px;
     margin-left: 42px;
 }
 
-.image-container img {
-    max-width: 100%;
-    height: auto;
-}
-
 .any_text {
-    max-width: 581px;
-    max-height: 20px;
+
+    width: 581px;
+    height: 20px;
     margin-top: 65px;
 }
 
 .phoneNumber {
-    max-width: 120px;
-    max-height: 15px;
-    margin-top: 65px;
+    width: 146px;
+    height: 19px;
+    position: absolute;
+    top: 65px;
+    right: 62px;
 }
+
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column;
+    }
+
+    .headerLogo {
+        width: 170px;
+        height: 106px;
+        left: 15px;
+    }
+
+    .phoneNumber {
+        top: 44px;
+        right: 15px;
+    }
+
+    .any_text {
+        margin-top: 137px;
+    }
+}
+
 
 .orangeRectangle {
     position: absolute;
@@ -63,6 +97,18 @@
     position: absolute;
     z-index: 2;
     left: 73%;
+}
+
+@media (max-width: 1350px) {
+    .orangeRectangle,
+    .whiteRectangle {
+        display: none;
+    }
+
+    .any_text {
+        margin-top: 137px;
+    }
+
 }
 
 .secOrangeRectangle {
@@ -106,7 +152,7 @@
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
-    line-height: 68px; /* 106.25% */    
+    line-height: 68px;    
 
 
 
@@ -166,13 +212,19 @@
     margin-left: 15px;
 }
 
+@media (max-width: 768px) {
+    .desktop-container {
+      background-size: cover; 
+    }
+  }*/
 .aboutUs {
     background-image: url('./images/background.png');
     background-size: cover;
     background-position: center;
-    min-width: 1440px;
+    min-width: 100%;
     position: relative;
     z-index: 0;
+    overflow-x: hidden;
 
 }
 
@@ -201,6 +253,32 @@
     flex-shrink: 0;
     margin-top: 40px;
 }
+
+@media (max-width: 768px) {
+    .twophoto {
+        flex-direction: column;
+        align-items: center;
+    }
+    .womanSit, .noWoman {
+        order: 1; /* Переносим фотографии наверх */
+        width: 50%; /* Чтобы фотографии занимали всю ширину блока */
+         /* Задаем максимальную ширину изображения */
+        height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
+        margin-top: 20px; /* Добавляем отступ между текстом и фотографиями */
+    }
+    .newLifeStyle {
+        width: 100%;
+        align-items: center;
+        
+        
+    }
+
+    .BecomePart {
+        width: 100%;
+    }
+}
+
+
 
 .newLifeStyle {
     display: flex;
@@ -255,7 +333,7 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    line-height: 28px; /* 155.556% */
+    line-height: 28px; 
     margin-left: 25px;
 }
 
@@ -278,7 +356,7 @@
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
-    line-height: 34px; /* 113.333% */
+    line-height: 34px; 
 }
 
 .galleryPeople {
@@ -318,7 +396,7 @@
     max-height: 40px;
 }
 
-/* Для экранов шириной менее 768px */
+
 @media (max-width: 768px) {
     .backArrow, .forwardArrow, .secondPhoto, .thirdPhoto, .fourthPhoto {
         visibility: hidden;
@@ -394,16 +472,16 @@ flex-shrink: 0;
     position: absolute;
     z-index: 2;
     flex-shrink: 0;
-    bottom: 0; /* Чтобы элемент был прижат к верхней границе .aboutUs */
+    bottom: 0; 
     left: 0;
 }
 .aboutUsWhiteRec {
     position: absolute;
     z-index: 2;
     flex-shrink: 0;
-    bottom: 34px; /* Чтобы элемент был прижат к верхней границе .aboutUs */
+    bottom: 34px; 
     left: 0;
-}
+}/*
 
 .schedule {
     margin: 100px 70px 100px 70px;
@@ -426,7 +504,7 @@ flex-shrink: 0;
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
-    line-height: 34px; /* 113.333% */
+    line-height: 34px; 
     align-self: center;    
     
 }
@@ -447,7 +525,7 @@ flex-shrink: 0;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 133.333% */    
+    line-height: 24px;   
 }
 
 .oneTrain {
@@ -458,7 +536,7 @@ flex-shrink: 0;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 133.333% */   
+    line-height: 24px;  
  
 }
 
@@ -470,7 +548,7 @@ flex-shrink: 0;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 133.333% */    
+    line-height: 24px; 
 }
 
 .eightTrains {
@@ -481,7 +559,7 @@ flex-shrink: 0;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 133.333% */        
+    line-height: 24px;       
 }
 
 .twelveTrains {
@@ -492,7 +570,7 @@ flex-shrink: 0;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 133.333% */    
+    line-height: 24px;     
 }
 
 .abonements {
@@ -500,7 +578,7 @@ flex-shrink: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; /* Добавьте это, чтобы выровнять текст по центру */
+    text-align: center; 
 
 }
 
@@ -520,7 +598,7 @@ flex-shrink: 0;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 150% */      
+    line-height: 24px;    
     text-align: start;  
 }
 
@@ -534,7 +612,7 @@ flex-shrink: 0;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 150% */    
+    line-height: 24px;  
 }
 
 .twentySix {
@@ -545,7 +623,7 @@ flex-shrink: 0;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 150% */
+    line-height: 24px; 
 }
 
 .fiftyTwo {
@@ -556,7 +634,7 @@ flex-shrink: 0;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 150% */    
+    line-height: 24px; 
 }
 
 .seventyTwo {
@@ -567,7 +645,7 @@ flex-shrink: 0;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 24px; /* 150% */    
+    line-height: 24px;  
 }
 
 .gymTrain {
@@ -577,7 +655,7 @@ flex-shrink: 0;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 150% */      
+    line-height: 24px;     
     text-align: start;      
 }
 
@@ -596,7 +674,7 @@ flex-shrink: 0;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 150% */  
+    line-height: 24px; 
 }
 
 .groupTrain {
@@ -606,7 +684,7 @@ flex-shrink: 0;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 150% */      
+    line-height: 24px;     
     text-align: start;
     display: flex;
     justify-content: center;
@@ -622,7 +700,7 @@ flex-shrink: 0;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 30px; /* 125% */    
+    line-height: 30px;  
 }
 
 .cardTypes {
@@ -641,7 +719,7 @@ flex-shrink: 0;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 133.333% */
+    line-height: 24px; 
     text-align: start;    
 }
 
@@ -653,7 +731,7 @@ flex-shrink: 0;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 133.333% */    
+    line-height: 24px;    
 }
 
 .sixMonths {
@@ -664,7 +742,7 @@ flex-shrink: 0;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 133.333% */    
+    line-height: 24px;    
 }
 
 .threeMonths {
@@ -675,7 +753,7 @@ flex-shrink: 0;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 133.333% */    
+    line-height: 24px;    
 }
 
 .oneMonth {
@@ -686,7 +764,7 @@ flex-shrink: 0;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 133.333% */    
+    line-height: 24px;   
 }
 
 .IndWithoutLimBlock {
@@ -703,7 +781,7 @@ flex-shrink: 0;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 150% */      
+    line-height: 24px;     
     text-align: start;
     display: flex;
     justify-content: center;
@@ -718,7 +796,7 @@ flex-shrink: 0;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 150% */
+    line-height: 24px;
 }
 
 .twelveThousand {
@@ -729,7 +807,7 @@ flex-shrink: 0;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 133.333% */
+    line-height: 24px; 
     display: flex;
     align-items: center; 
     justify-content: center;       
@@ -743,7 +821,7 @@ flex-shrink: 0;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 133.333% */
+    line-height: 24px; 
     display: flex;
     align-items: center;
     justify-content: center; 
@@ -757,7 +835,7 @@ flex-shrink: 0;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 133.333% */    
+    line-height: 24px;    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -770,7 +848,7 @@ flex-shrink: 0;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 150% */      
+    line-height: 24px;  
     text-align: start;
     display: flex;
     justify-content: flex-start;
@@ -785,7 +863,7 @@ flex-shrink: 0;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 150% */ 
+    line-height: 24px; 
     display: flex;
     justify-content: center;
     align-items: center;
